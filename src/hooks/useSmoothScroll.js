@@ -6,10 +6,11 @@ export function useSmoothScroll() {
     if (!element) return;
 
     const navbarHeight = 80; // Height of sticky navbar
-    const targetPosition = element.offsetTop - navbarHeight;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - navbarHeight;
 
     window.scrollTo({
-      top: targetPosition,
+      top: offsetPosition,
       behavior: 'smooth'
     });
   }, []);

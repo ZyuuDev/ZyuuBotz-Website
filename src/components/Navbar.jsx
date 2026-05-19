@@ -31,8 +31,15 @@ function Navbar() {
   }, []);
 
   const handleNavClick = (href) => {
-    scrollToSection(href);
-    setIsMobileMenuOpen(false);
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+      // Wait for menu animation to finish before scrolling to prevent layout jumping/interruption
+      setTimeout(() => {
+        scrollToSection(href);
+      }, 250);
+    } else {
+      scrollToSection(href);
+    }
   };
 
   return (
