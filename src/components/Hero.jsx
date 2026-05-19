@@ -66,7 +66,7 @@ function Hero() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <a
-                href="zyuuudev.my.id"
+                href="https://zyuudev.my.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.btnPrimary}
