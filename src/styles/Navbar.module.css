@@ -1,0 +1,253 @@
+/* ========== NAVBAR ========== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--navbar-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 20px rgba(212, 175, 55, 0.08);
+}
+
+/* Single row container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.875rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+}
+
+/* ── Logo ─────────────────── */
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-decoration: none;
+}
+
+.logoDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* ── Desktop Nav ──────────── */
+.navMenu {
+  display: flex;
+  gap: 1.75rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.25s ease;
+  position: relative;
+  padding: 0.25rem 0;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: var(--accent);
+}
+
+.navLink.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.navLink.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+/* ── Actions row ──────────── */
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+}
+
+/* CTA Button */
+.btnCta {
+  padding: 0.5rem 1.25rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.3);
+}
+
+.btnCta:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Theme toggle */
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9999px;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.themeToggle:hover {
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.15);
+  border-color: var(--accent);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.375rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.hamburger:hover {
+  background: var(--accent-light);
+}
+
+/* ── Mobile Menu ──────────── */
+
+/* ========== BREAKPOINTS ========== */
+
+/* Tablet: hide desktop CTA, keep nav links + toggle */
+@media (max-width: 1024px) {
+  .navMenu {
+    gap: 1.25rem;
+  }
+}
+
+/* Mobile: full hamburger layout */
+@media (max-width: 768px) {
+  .navMenu {
+    display: none;
+  }
+
+  .btnCta {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* On very small screens, hide toggle label, show only icon */
+  .themeToggle {
+    padding: 0.4rem 0.6rem;
+    font-size: 0; /* hide text */
+    gap: 0;
+  }
+
+  /* re-show icon */
+  .themeToggle svg {
+    display: block;
+  }
+}
+
+/* Expanded: mobile menu panel */
+.mobileMenuWrapper {
+  overflow: hidden;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem 1rem;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+  gap: 0.25rem;
+}
+
+.mobileNavLink {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-radius: 12px;
+  width: 100%;
+  display: block;
+  transition: background 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+
+.mobileNavLink:hover,
+.mobileNavLink.active {
+  background: var(--accent-light);
+  color: var(--accent);
+}

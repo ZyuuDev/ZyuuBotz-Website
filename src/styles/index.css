@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* =============================
+   CSS VARIABLES — LIGHT (DEFAULT)
+   ============================= */
+:root,
+:root[data-theme="light"] {
+  --bg-primary: #F8F7FF;
+  --bg-secondary: #FFFFFF;
+  --bg-card: rgba(255, 255, 255, 0.6);
+  --bg-glass: rgba(255, 255, 255, 0.7);
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B7280;
+  --accent: #C59B27;
+  --accent-hover: #A6801C;
+  --accent-light: rgba(197, 155, 39, 0.1);
+  --accent-light2: #FDF8E8;
+  --border: rgba(255, 255, 255, 0.5);
+  --border-subtle: rgba(229, 231, 235, 0.8);
+  --shadow-soft: 0 10px 40px -10px rgba(197, 155, 39, 0.15);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --navbar-bg: rgba(248, 247, 255, 0.9);
+  --hero-gradient: linear-gradient(135deg, #FDF8E8 0%, #E0F2FE 100%);
+  --gradient-text-start: #C59B27;
+  --gradient-text-end: #45B6FE;
+}
+
+/* =============================
+   CSS VARIABLES — DARK
+   ============================= */
+:root[data-theme="dark"] {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --bg-card: rgba(26, 26, 26, 0.8);
+  --bg-glass: rgba(26, 26, 26, 0.7);
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent: #FFD700;
+  --accent-hover: #E5C100;
+  --accent-light: rgba(255, 215, 0, 0.15);
+  --accent-light2: rgba(255, 215, 0, 0.1);
+  --border: rgba(255, 215, 0, 0.15);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --shadow-soft: 0 10px 40px -10px rgba(255, 215, 0, 0.2);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --navbar-bg: rgba(13, 13, 13, 0.9);
+  --hero-gradient: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(40, 35, 10, 0.8) 100%);
+  --gradient-text-start: #FFD700;
+  --gradient-text-end: #60C2FF;
+}
+
+/* =============================
+   RESET & BASE
+   ============================= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* prevent horizontal overflow globally */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: background 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 320px; /* minimum supported width */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =============================
+   LAYOUT UTILITY
+   ============================= */
+/* Single source-of-truth container — used by App wrapper */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Glassmorphism card */
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(90deg, var(--gradient-text-start) 0%, var(--gradient-text-end) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* App wrapper */
+.app {
+  width: 100%;
+  overflow-x: hidden;
+}

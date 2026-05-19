@@ -1,0 +1,36 @@
+/* ========== BACK TO TOP ========== */
+.button {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  width: 42px;
+  height: 42px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.4);
+  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+  /* Prevent any content from bleeding under this */
+  flex-shrink: 0;
+}
+
+.button:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 6px 22px rgba(212, 175, 55, 0.5);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button {
+    bottom: 2rem;
+    right: 2rem;
+    width: 46px;
+    height: 46px;
+  }
+}
