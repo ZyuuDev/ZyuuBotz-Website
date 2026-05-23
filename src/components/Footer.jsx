@@ -13,7 +13,7 @@ function Footer() {
           <div className={styles.column}>
             <div className={styles.logo}>
               <img
-                src="https://api.ryhar.my.id/upload/1779527929025-d78759086cc9.jpg"
+                src="https://files.catbox.moe/j1wnna.jpg"
                 alt="ZyuuBotz Logo"
                 className={styles.logoImg}
               />

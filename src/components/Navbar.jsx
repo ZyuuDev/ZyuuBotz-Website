@@ -53,7 +53,7 @@ function Navbar() {
         {/* Logo */}
         <a className={styles.logo} href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>
           <img
-            src="https://api.ryhar.my.id/upload/1779527929025-d78759086cc9.jpg"
+            src="https://files.catbox.moe/j1wnna.jpg"
             alt="ZyuuBotz Logo"
             className={styles.logoImg}
           />
