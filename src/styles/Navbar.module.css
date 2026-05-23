@@ -37,7 +37,7 @@
 
 /* ── Logo ─────────────────── */
 .logo {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.25rem;
   font-weight: 800;
   color: var(--text-primary);
@@ -57,6 +57,14 @@
   border-radius: 50%;
   background: var(--accent);
   display: inline-block;
+  flex-shrink: 0;
+}
+
+.logoImg {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
   flex-shrink: 0;
 }
 

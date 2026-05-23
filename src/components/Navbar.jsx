@@ -52,7 +52,11 @@ function Navbar() {
       <div className={styles.container}>
         {/* Logo */}
         <a className={styles.logo} href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>
-          <span className={styles.logoDot}></span>
+          <img
+            src="https://api.ryhar.my.id/upload/1779527929025-d78759086cc9.jpg"
+            alt="ZyuuBotz Logo"
+            className={styles.logoImg}
+          />
           ZyuuBotz
         </a>
 

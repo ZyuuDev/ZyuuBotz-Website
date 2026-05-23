@@ -5,14 +5,14 @@ import styles from '../styles/Hero.module.css';
 
 const featurePills = [
   { icon: <Download size={16} strokeWidth={2} />, label: 'All-in-one Downloader' },
-  { icon: <Bot size={16} strokeWidth={2} />, label: 'AI Assistant Waifu' },
-  { icon: <Shield size={16} strokeWidth={2} />, label: 'Grup Moderation' },
-  { icon: <Lock size={16} strokeWidth={2} />, label: 'Group Protection' }
+  { icon: <Bot size={16} strokeWidth={2} />, label: 'AI Assistant' },
+  { icon: <Shield size={16} strokeWidth={2} />, label: 'Grup Moderation & Protection' },
+  { icon: <Lock size={16} strokeWidth={2} />, label: '60+ Games' }
 ];
 
 const statsItems = [
-  '500+ Pengguna Aktif',
-  '39 Kepribadian AI',
+  '1200+ Pengguna Aktif',
+  '14+ Kepribadian AI',
   '99.9% Uptime'
 ];
 
@@ -46,7 +46,7 @@ function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Mudahkan Segalanya dengan{' '}
+              Hilangkan Bosanmu dengan{' '}
               <span className={styles.highlight}>ZyuuBotz.</span>
             </motion.h1>
 
@@ -56,7 +56,7 @@ function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Fokus ke value, biar bot yang kerja. Downloader, AI Waifu, Moderasi Grup, dan Proteksi otomatis dalam satu bot.
+              Zyuubotz memiliki lebih dari 450+ Fitur yang bisa menemanimu. Mulai dari Downloader, AI Waifu, Moderasi Grup, Proteksi Grup, Game dan masih banyak lagi dalam satu bot.
             </motion.p>
 
             <motion.div
@@ -66,7 +66,7 @@ function Hero() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <a
-                href="https://zyuudev.my.id"
+                href="https://zyuubotz.my.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.btnPrimary}

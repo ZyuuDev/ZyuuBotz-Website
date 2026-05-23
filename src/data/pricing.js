@@ -1,20 +1,9 @@
 export const pricingData = {
   premium: [
     {
-      name: 'Premium Bulanan',
-      price: 'Rp 9.000',
-      period: 'bulan',
-      label: 'Bukan untuk grup',
-      features: [
-        'Akses hampir semua fitur',
-        'Limit penggunaan unlimited',
-        'Tetap aktif meski bot ganti nomor'
-      ]
-    },
-    {
-      name: 'Premium 3 Bulan',
-      price: 'Rp 25.000',
-      period: '3 bulan',
+      name: 'Premium 90 Hari',
+      price: 'Rp 10.000',
+      period: '90 Hari',
       label: 'Paling Populer',
       badge: 'Rekomendasi',
       highlighted: true,
@@ -25,11 +14,11 @@ export const pricingData = {
       ]
     },
     {
-      name: 'Premium 1 Tahun',
-      price: 'Rp 95.000',
-      period: '1 Tahun',
-      label: 'Paling Hemat',
-      cornerRibbon: 'PALING HEMAT',
+      name: 'Premium 900 Hari',
+      price: 'Rp 20.000',
+      period: '900 Hari',
+      label: 'Paling Awet',
+      cornerRibbon: 'PALING AWET',
       features: [
         'Berlaku selama bot aktif beroperasi',
         'Tidak hilang ketika bot ganti nomor',
@@ -40,7 +29,7 @@ export const pricingData = {
   sewa: [
     {
       name: 'VIP Grup',
-      price: 'Rp 30.000',
+      price: 'Rp 8.000',
       period: 'bulan',
       label: 'Untuk 1 grup',
       features: [
@@ -51,7 +40,7 @@ export const pricingData = {
     },
     {
       name: 'VVIP Grup',
-      price: 'Rp 50.000',
+      price: 'Rp 10.000',
       period: 'bulan',
       badge: '⚡ Unlimited Limit',
       label: 'Power user',
@@ -65,49 +54,43 @@ export const pricingData = {
   ],
   jadibot: [
     {
-      name: 'Jadibot Reguler',
-      price: 'Rp 15.000',
-      period: 'bulan',
+      name: 'Limit Jadibot Reguler',
+      price: 'Rp 10.000',
+      period: 'Hari',
       label: 'Pakai nomor WA kamu',
       badge: 'Reguler',
       features: [
         'Kamu sediakan nomor WA sendiri',
         'Respon standar & stabil',
-        'Tanggung risiko banned oleh WhatsApp'
+        'Tanggung risiko banned oleh WhatsApp',
+        'Mendapatkan 5 limit'
       ]
     },
     {
-      name: 'Jadibot Exclusive',
-      price: 'Rp 35.000',
-      period: 'bulan',
+      name: 'Limit Jadibot Exclusive',
+      price: 'Rp 20.000',
+      period: 'Hari',
       badge: 'Exclusive ⭐',
       highlighted: true,
       features: [
+        'Kamu sediakan nomor WA sendiri',
         'Server lebih optimal & responsif',
         'Prioritas resource',
-        'Support lebih sigap'
+        'Support lebih sigap',
+        'Mendapatkan 10 limit'
       ]
     },
     {
-      name: 'VVIP Grup Jadibot Reguler',
-      price: 'Rp 25.000',
+      name: 'Limit Jadibot 3VIP',
+      price: 'Rp 29.000',
       period: 'bulan',
-      badge: 'Reguler',
+      badge: 'VIP 🔥',
       features: [
-        'Nomor WA dari kamu',
-        'Performa reguler',
-        'Kebijakan sama seperti Reguler'
-      ]
-    },
-    {
-      name: 'VVIP Grup Jadibot Exclusive',
-      price: 'Rp 35.000',
-      period: 'bulan',
-      badge: 'Exclusive 🔥',
-      features: [
+        'Kamu sediakan nomor WA sendiri',
         'Performa lebih tinggi',
         'Prioritas resource',
-        'Support lebih sigap'
+        'Support lebih sigap',
+        'Mendapatkan 20 limit'
       ]
     }
   ]

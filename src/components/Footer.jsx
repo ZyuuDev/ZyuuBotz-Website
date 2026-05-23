@@ -12,7 +12,11 @@ function Footer() {
           {/* Brand Column */}
           <div className={styles.column}>
             <div className={styles.logo}>
-              <span className={styles.logoDot}></span>
+              <img
+                src="https://api.ryhar.my.id/upload/1779527929025-d78759086cc9.jpg"
+                alt="ZyuuBotz Logo"
+                className={styles.logoImg}
+              />
               ZyuuBotz
             </div>
             <p className={styles.tagline}>

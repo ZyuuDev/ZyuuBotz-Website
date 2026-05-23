@@ -8,23 +8,23 @@ export const featuresData = [
   },
   {
     icon: Bot,
-    title: 'AI Assistant Waifu',
-    description: '39+ kepribadian AI unik — dari Megumi Kato, Alya Kujou, Nahida, Kazuha, dan masih banyak lagi. Teman ngobrol 24/7 yang selalu ada.'
+    title: 'AI Assistant',
+    description: '14+ kepribadian AI unik — dari blackbox, gemini, kimi, furina, cartethyia dan masih banyak lagi. Teman ngobrol 24/7 yang selalu ada.'
   },
   {
     icon: Shield,
     title: 'Grup Moderation',
-    description: 'Auto-moderasi pesan, anti spam, filter kata kasar, dan kontrol aturan grup secara otomatis. Admin grup makin santai.'
+    description: 'Penyimpanan list (addlist, updatelist, dellist), anti spam, filter kata kasar, dan kontrol aturan grup secara otomatis. Admin grup makin santai.'
   },
   {
     icon: Lock,
     title: 'Group Protection',
-    description: 'Proteksi join/leave otomatis, deteksi anti-link berbahaya, dan tindakan cepat terhadap aktivitas mencurigakan di grup.'
+    description: 'Proteksi join/leave otomatis, deteksi anti-link group lain atau link berbahaya, dan tindakan cepat terhadap aktivitas mencurigakan di grup.'
   },
   {
     icon: Coins,
-    title: 'Sistem Coin & Credit',
-    description: 'Kumpulkan coin lewat !claim dan !redeem. Tukarkan dengan assistant AI favoritmu atau akses fitur Image Generation.'
+    title: 'Sistem XP & Level',
+    description: 'Kumpulkan XP lewat games yang ada di bot. Naikkan level setinggi mungkin untuk mendapatka reward dari owner'
   },
   {
     icon: Gamepad2,
