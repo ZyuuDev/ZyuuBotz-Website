@@ -79,7 +79,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/6281249368080?text=Halo%20kak%20mau%20coba%20ZyuuBotz"
+                  href="https://zyuudev.my.id"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.link}
