@@ -1,4 +1,4 @@
-# ZyuuBotz Landing Page
+# ZyuuBotzPage
 
 Website one-page modern untuk layanan WhatsApp Bot "ZyuuBotz" yang dibangun menggunakan **Vite + React 18** dengan desain premium terinspirasi dari Arisu Soft.
 
