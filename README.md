@@ -189,8 +189,8 @@ npx gh-pages -d dist
 ## 🎯 Performance
 
 Build output:
-- Total bundle size: ~360 KB
-- Gzipped: ~113 KB
+- Total bundle size: ~400 KB
+- Gzipped: ~120 KB
 - Code-split chunks untuk optimal loading
 - Lazy loading untuk images
 
