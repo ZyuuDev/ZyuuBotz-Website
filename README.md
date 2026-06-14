@@ -5,7 +5,7 @@ Website one-page modern untuk layanan WhatsApp Bot "ZyuuBotz" yang dibangun meng
 ## 🚀 Tech Stack
 
 - **Build Tool:** Vite 8.x
-- **Framework:** React 19.x
+- **Framework:** React 18.x
 - **Styling:** CSS Modules dengan CSS Variables
 - **Icons:** Lucide React
 - **Animations:** Framer Motion
@@ -58,7 +58,7 @@ zyuubotz-landing-page/
 - Icon animation saat toggle
 
 ### 2. **Smooth Scroll Navigation**
-- Sticky navbar dengan active section highlighting
+- Sticky navbar dengan active section highlight
 - Smooth scroll ke section dengan offset untuk navbar
 - Mobile hamburger menu dengan animasi
 
